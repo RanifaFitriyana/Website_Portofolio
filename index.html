@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">My Portfolio</a>
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero-section">
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hi! I'm Ranifa</h1>
+            <p>
+               Saat ini saya sedang menempuh pendidikan di Politeknik Harapan Berasama dengan Program Studi Sarjana Terapan Teknik Informatika
+            </p>
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
+      
+          <div class="hero-image">
+            <img src="img/profile.jpeg" alt="Ranifa">
+          </div>
+        </div>
+      </header>
+      
+  </header>
+
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>Halo! Nama saya Ranifa Fitriyana. Saya merupakan lulusan SMK jurusan Rekayasa Perangkat Lunak, dan sekarang saya melanjutkan pendidikan ke jenjang perkuliahan dengan mengambil program studi Teknik Informatika. Berikut merupakan beberapa pengalaman yang sudah saya lewati:</p>
+    <ul>
+      <li>Mengikuti Ujian Sertifikasi Kompetensi Keahlian bidang Software Engineer</li>
+      <li>Mengikuti Studyclub PlugIn batch Web Developer Beginner dan Web Developer Intermediate </li>
+      <li>Mengikuti beberapa workshop seperti Mobile Developer, Cyber Securuty, dll</li>
+    </ul>
+    <p>Beberapa bahasa pemrograman yang sudah pernah saya gunakan yaitu PHP, Java, Python, Javascript, dan Typescript. Dari pengalaman yang sudah saya dapatkan, saya menjadi suka dan tertarik dengan Web Development. Oleh karena itu, saat ini saya sedang mempelajari web development lebih lanjut karena tujuan saya ingin menjadi seorang Web Developer untuk kedepannya.</p>
+  </section>
+
+  <section id="projects" class="project-section">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Aplikasi Manajemen Buku</h3>
+        <p>Aplikasi yang memungkinkan pengguna untuk mengelola koleksi buku. Aplikasi ini menggunakan React Typescript dan Prisma sebagai Backend.</p>
+        <a href="https://github.com/RanifaFitriyana/FinalProject-WebIntermediate" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Website Pariwisata</h3>
+        <p>Website yang bertujuan memperkenalkan suatu tempat wisata di daerah Kab.Tegal.</p>
+        <a href="https://github.com/RanifaFitriyana/Website_GuciForest" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Sistem Pencarian Prodi</h3>
+        <p>Sistem yang digunakan untuk mencari tahu prodi dari mahasiswa berdasarkan NIM. </p>
+        <a href="https://github.com/RanifaFitriyana/TugasAlgoritma" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+<footer id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <div class="social-links">
+    <a href="https://www.instagram.com/ranifaftryna_" onclick="confirmNavigation(event, 'Instagram')" target="_blank" class="social-link">
+      <img src="img/instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://www.youtube.com/@ranifafitriyana7856" onclick="confirmNavigation(event, 'Youtube')" target="_blank" class="social-link">
+      <img src="img/youtube.png" alt="Youtube" />
+    </a>
+    <a href="https://wa.me/qr/S3SHQCSQS3VKM1" onclick="confirmNavigation(event, 'WhatsApp')" target="_blank" class="social-link">
+      <img src="img/whatsapp.png" alt="WhatsApp" />
+    </a>
+    <a href="https://www.linkedin.com/in/ranifafitriyana" onclick="confirmNavigation(event, 'LinkedIn')" target="_blank" class="social-link">
+      <img src="img/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/RanifaFitriyana" onclick="confirmNavigation(event, 'GitHub')" target="_blank" class="social-link">
+      <img src="img/github.png" alt="GitHub" />
+    </a>
+  </div>
+</footer>
+
+
+  <script>
+    function confirmNavigation(event, platform) {
+    const userConfirmed = confirm(`Anda akan diarahkan ke ${platform}. Apakah Anda ingin melanjutkan?`);
+
+    if (!userConfirmed) {
+      event.preventDefault(); 
+    }
+  }
+  </script>
+</body>
+</html>
